@@ -1,0 +1,558 @@
+@import url('https:google.apis.com/css?family=Montserrat:400,600');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.ulKiri,
+.ulKanan {
+    opacity: 0;
+    transform: translate(-15px, 0);
+    transition: .5s;
+}
+
+.ulKanan {
+    transform: translate(15px, 0);
+}
+
+.ulKiri.ulMuncul,
+.ulKanan.ulMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.container {
+    width: 100%;
+height:auto;
+    background-color: #0C9BDB;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+.navbarLink {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.navbarLink,
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a.labelScroll img {
+    margin-top: 50px;
+}
+
+#Brand {
+    margin-left: 30px;
+}
+
+#contact {
+    margin-right: 40px;
+}
+
+.homeWorking {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.homeWorking::after {
+
+    content: '';
+    background: url(../img/work-table.png) bottom center no-repeat;
+    position: absolute;
+    background-size: 80%;
+    bottom: 0;
+}
+
+.img-homework{
+
+width:100%;
+height:auto;
+margin-top:50px;
+}
+
+.labelScroll {
+    position: absolute;
+    top: 250px;
+    left: 120px;
+    text-align: center;
+}
+
+.containerBlack {
+    background-color: #4C5256;
+}
+
+.label {
+    background-color: white;
+    text-align: center;
+    color: black;
+    border: 1px solid transparent;
+    line-height: 10vh;
+    box-shadow: 3px 1px 5px 0px black;
+    position: relative;
+    z-index: 1;
+}
+
+.labelName {
+    text-align: center;
+}
+
+.labelAbout {
+    text-align: center;
+    color: white;
+    margin: 100px;
+}
+
+.textAbout {
+    padding: 90px;
+    font-size: 1em;
+    opacity: 0;
+    transition: .5s;
+}
+
+.textAboutMuncul {
+    opacity: 1;
+}
+
+.me {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.meMuncul {
+    opacity: 1;
+}
+
+.name {
+    color: white;
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: .5s;
+}
+
+.nameMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.tagWork {
+    color: #0C9BDB;
+    opacity: 0;
+    transform: translate(50px, 0);
+    transition: .5s;
+}
+
+.tagMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.labelSkill {
+    text-align: center;
+    color: white;
+    margin: 100px;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 90px;
+}
+
+.row1 .col {
+    margin-left: -100px;
+}
+
+.labelSoftware {
+    text-align: center;
+    color: white;
+    margin: 0px 100px;
+}
+
+.imgSoftware {
+    padding: 12px;
+    margin: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.imgSoftwareMuncul {
+    opacity: 1;
+}
+
+.containerBlack1 {
+    text-align: center;
+}
+
+.content {
+    width: auto;
+    height: auto;
+    padding: 16px;
+    background-color: #0C9BDB;
+}
+
+.content1 {
+    width: auto;
+    height: auto;
+    padding: 16px;
+    margin: auto;
+    background-color: #4C5256;
+}
+
+div .gallery {
+    border: 1px solid #ccc;
+    box-shadow: 3px 5px 10px #888888;
+    text-align: center;
+}
+
+div .gallery:hover {
+    border: 1px solid #777;
+}
+
+div .gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div .gallery a:hover {
+    opacity: 0.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.layout-responsive {
+    float: left;
+    padding: 6px;
+    width: 24.99999%;
+    opacity: 0;
+    transform: translate(0, -15px);
+    transition: .5s;
+}
+
+div.layout-responsive.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.layout-responsive1 {
+    margin: 30px;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(90, 86, 86);
+    color: white;
+}
+
+#bar {
+    display: none;
+
+}
+
+.hire-Me {
+    position: relative;
+    left: 200px;
+    top: 300px;
+    bottom: 0;
+    display: block;
+    width: 300px;
+    height: 30px;
+    padding: 5px 110px;
+    background-color: #0C9BDB;
+    box-shadow: 0 2px 3px 1px #254ec9;
+    color: white;
+    border-style: none;
+}
+
+.hire-Me:hover {
+    background-color: rgb(16, 121, 170);
+}
+
+/* .navbarLink a:first-child {
+    font-size: 2em;
+    margin-left: 2px;
+} */
+
+@media only screen and (max-width:1024px) {
+    .hire-Me {
+        position: relative;
+        left: 70px;
+        top: 130px;
+        bottom: 0;
+        display: block;
+        width: 300px;
+        height: 30px;
+        padding: 5px 110px;
+        background-color: #0C9BDB;
+        box-shadow: 0 2px 3px 1px #254ec9;
+        color: white;
+        border-style: none;
+    }
+
+    .hire-Me:hover {
+        background-color: rgb(16, 121, 170);
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .layout-responsive {
+        width: 49.99999%;
+        margin: 10px 0 5px;
+        padding: 5px;
+        float: left;
+    }
+
+    .row1 {
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .layout-responsive {
+        width: 100%;
+    }
+
+    .imgSoftware img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 0;
+    }
+
+    .row1 {
+        margin-left: -80px;
+        padding: 15px 10px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .row1 .col {
+
+        position: relative;
+        margin: auto;
+    }
+
+    .col img {
+        width: 10vw;
+
+    }
+
+    .labelScroll {
+        display: none;
+    }
+
+    .textAbout {
+        text-align: center;
+        padding: inherit;
+        font-size: 1em;
+        line-height: 15px;
+    }
+
+    .navbarLink a:not(:first-child) {
+        display: none;
+    }
+
+    .navbarLink #bar {
+        position: inherit;
+        display: block;
+        float: right;
+        right: 0;
+        top: 0;
+    }
+
+    #bar svg {
+        margin-top: 20px;
+        height: 20px;
+        width: 30px;
+    }
+
+
+}
+
+@media only screen and (max-width:500px) {
+    .navbarLink.responsive {
+        position: relative;
+        display: list-item;
+    }
+
+    .navbarLink.responsive #bar {
+        position: inherit;
+        float: right;
+        right: 0;
+        top: 0;
+    }
+
+    .navbarLink.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .navbarLink.resposive a:not(:first-child) {
+        font-size: small;
+    }
+
+    .hire-Me {
+        position: relative;
+        left: 40px;
+        top: 80px;
+        bottom: 0;
+        display: block;
+        width: 100px;
+        height: 20px;
+        padding: 2px 20px;
+        background-color: #0C9BDB;
+        box-shadow: 0 2px 3px 1px #254ec9;
+        color: white;
+        border-style: none;
+    }
+
+    .hire-Me:hover {
+        background-color: rgb(16, 121, 170);
+    }
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hireMe {
+    padding-top: 33vh;
+    width: 100%;
+}
+
+@media only screen and (max-width:375px) {
+    #Brand {
+        margin-left: 10px;
+    }
+
+    #Brand h2 {
+        font-size: smaller;
+        font-weight: bold;
+    }
+
+    .labelSkill {
+        text-align: center;
+        margin: 55px;
+    }
+
+    .textAbout {
+        font-size: small;
+        line-height: 15px;
+        padding: 0px;
+
+    }
+
+    .labelName {
+        text-align: center;
+        font-size: small;
+    }
+
+    .labelAbout {
+        margin: 55px;
+    }
+
+    .labelSoftware {
+        margin: 0;
+        padding: 55px;
+    }
+
+    .navbarLink.responsive {
+        position: relative;
+        display: list-item;
+    }
+
+    .navbarLink.responsive #bar {
+        position: inherit;
+        float: right;
+        right: 0;
+        top: 0;
+    }
+
+    .navbarLink.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .navbarLink.resposive a:not(:first-child) {
+        font-size: small;
+    }
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.footer a {
+    font-size: .8em;
+}
+
+.footer-container {
+    display: inline-table;
+    justify-content: space-between;
+}
+
+.form-control {
+    margin-bottom: 12px;
+}
+
+.form-contact {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+}
+
+.content-form {
+
+    margin: auto;
+    padding: 50px;
+}
+
+#tombol {
+    color: white;
+    width: 100%;
+    background-color: rgb(0, 0, 255);
+    border-style: none;
+    height: 30px;
+    box-shadow: 0 2px 3px 1px rgb(33, 13, 145)
+}
+
+#tombol:hover {
+    background-color: rgba(0, 110, 255, 0.507);
+}
+
+svg {
+    width: 2vw;
+    height: 2vh;
+}
