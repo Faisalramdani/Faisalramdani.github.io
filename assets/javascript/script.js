@@ -37,14 +37,14 @@ $(window).scroll(function () {
     }
 
 });
-var button = document.querySelector('.bar');
+var button = document.querySelector('a#bar');
 var navbar = document.querySelector(".navbarLink");
 button.addEventListener('click', function () {
     if (navbar.className === "navbarLink") {
-        navbar.classList.add("responsive")
+        navbar.classList.add("responsive");
+        // console.log('respon');
     } else {
-        navbar.classList.remove("responsive")
-
+        navbar.classList.remove("responsive");
     }
 });
 
@@ -70,5 +70,3 @@ $('.page-scroll').on('click', function (e) {
 
     e.preventDefault;
 });
-
-
